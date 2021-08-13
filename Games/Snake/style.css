@@ -16,5 +16,6 @@
 }
 
 .apple {
-  background-color: red;
+  /* background-color: red; */
+  background-image: url("apple.gif");
 }
