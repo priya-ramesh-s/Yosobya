@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   border-style: solid;
+  background-color: black;
 }
 
 .grid div {
@@ -16,6 +17,5 @@
 }
 
 .apple {
-  /* background-color: red; */
-  background-image: url("apple.gif");
+  background-color: red;
 }
