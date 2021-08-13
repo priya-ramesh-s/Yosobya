@@ -1,0 +1,120 @@
+.game-container {
+  width: 1000px;
+  height: 730px;
+  position: absolute;
+  left: 150px;
+  margin: auto;
+}
+
+.border-left {
+  width: 80px;
+  height: 730px;
+  position: absolute;
+  background-color: #000;
+  z-index: +2;
+  left: 80px;
+}
+
+.border-right {
+  width: 80px;
+  height: 730px;
+  position: absolute;
+  background-color: #000;
+  z-index: +2;
+  left: 1150px;
+}
+
+.border-top {
+  width: 1150px;
+  height: 50px;
+  left: 80px;
+  position: absolute;
+  background-color: #000;
+  z-index: +2;
+  top: -1px;
+}
+
+.sky {
+  background-image: url("flappybird-bg.jpg");
+  overflow: hidden;
+  width: 1000px;
+  height: 580px;
+  position: absolute;
+}
+
+.ground {
+  background-color: #8b4513;
+  width: 1000px;
+  height: 150px;
+  position: absolute;
+  top: 580px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+  z-index: +1;
+}
+
+.bird {
+  background-image: url("bird.png");
+  background-size: 60px;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
+
+.obstacle {
+  background-image: url("flappybird-pipe.png");
+  width: 60px;
+  height: 300px;
+  position: absolute;
+}
+
+.topObstacle {
+  background-image: url("flappybird-pipe.png");
+  transform: rotate(180deg);
+  width: 60px;
+  height: 300px;
+  position: absolute;
+}
+
+#startBtn {
+  display: inline-block;
+  background-color: white;
+  border-width: thick;
+  border-color: yellow;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+  width: 200px;
+  height: 70px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  z-index: +3;
+}
+
+.neonText {
+  animation: flicker 1.5s infinite alternate;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Lucida Console", "Courier New", cursive;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
+      0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
